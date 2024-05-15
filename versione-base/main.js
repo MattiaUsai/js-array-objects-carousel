@@ -45,15 +45,5 @@ prev.addEventListener ('click' ,function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
 const imgsrc = document.querySelector('img');
 
