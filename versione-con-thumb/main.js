@@ -53,12 +53,11 @@ next.addEventListener ('click' ,function(){
     const thumbclas = document.querySelectorAll('.thumb');
 
     const thumbclasat = +thumbclas[index].attributes['data-active'].nodeValue;
-// console.dir (thumbclas);
-if (thumbclasat===index){
-
-    thumbclas[index].classList += 'active';
     
-}else {thumbclas[index].classList = 'thumb';}
+// console.dir (thumbclas);
+        if (thumbclasat===index)  {            thumbclas[index].classList+= 'active';        }
+        thumbclasat[thumbclasatd].classList = 'thumb';   
+    
 
 
 
@@ -87,13 +86,15 @@ prev.addEventListener ('click' ,function(){
         const thumbclasat = +thumbclas[index].attributes['data-active'].nodeValue;
     // console.dir (thumbclas);
         console.log(thumbclasat)
-    
-    
-    
         if (thumbclasat===index){
 
             thumbclas[index].classList+= 'active';
-        }else {thumbclas[index].classList = 'thumb';}
+        }
+    
+    
+    
+        if (thumbclasat===index)  {            thumbclas[index].classList+= 'active';        }
+        if (thumbclasat!==index)  {   thumbclas[index].classList = 'thumb';}
     
     
    
